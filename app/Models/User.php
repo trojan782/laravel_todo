@@ -17,7 +17,7 @@ class User extends Authenticatable
     use HasProfilePhoto;
     use Notifiable;
     use TwoFactorAuthenticatable;
-
+    //the relationship for the user and the task
     public function tasks()
     {
         return $this->hasMany(Task::class);
